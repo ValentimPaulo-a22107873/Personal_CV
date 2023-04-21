@@ -1,0 +1,203 @@
+:root {
+    --dark-background-color : rgb(136, 139, 141);
+    --dark-main-letter-color : black;
+    --dark-secondary-letter-color : lime;
+    /* For the dark mode */
+
+    --background-color : rgb(11, 11, 12);
+    --main-letter-color : white;
+    --secondary-letter-color : rgb(121, 119, 119);
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--main-letter-color);
+
+    margin: 0%;
+
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.dark-mode {
+    background-color: var(--dark-background-color);
+    color: var(--dark-main-letter-color);
+} 
+
+/* ------------------------------- GLOBAL ------------------------------------- */
+
+
+
+/* ------------------------------- HEADER ------------------------------------- */
+header {
+    width: 100%;
+    height: 11vh;
+    /* For its ocupation in the page */
+
+    display: flex;
+    justify-content: space-between;
+}
+
+header > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* For the positioning */
+
+    padding-left: 7%;
+}
+
+header > nav > a {
+    padding: 30px;
+    /* For the positioning */
+
+    text-decoration: none;
+    color: var(--secondary-letter-color);
+    font-size: 20px;
+}
+
+header > nav > a:hover {
+    text-shadow: 1px 1px 30px #ffffffcb;
+}
+
+header > .dark_mode_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* For the positioning */
+
+    padding-right: 6%;
+}
+
+/* ------------------------------- HEADER ------------------------------------- */
+
+
+
+/* --------------------------- HERO PAGE ----------------------------- */
+.hero {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero > .body {
+    width: 100%;
+    height: 89vh;
+    
+
+    display: flex;
+    justify-content: center;
+}
+
+/*----------------------------------*/
+.hero > .body > .image {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero > .body > .image > .picture {
+    width: 450px;
+    height: 450px;
+    margin-top: 13%;
+
+    background-color: white;
+    border-radius: 250px;
+}
+
+.hero > .body > .image > p {
+    margin-top: 2%;
+    font-size: 25px;
+    margin-bottom: 2%;
+}
+
+.hero > .body > .image > .social {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+} 
+
+.hero > .body > .image > .social > a {
+    padding-left: 7%;
+    padding-right: 7%;
+} 
+
+.hero > .body > .image > .social > a:hover {
+    text-shadow: 1px 1px 30px #ffffffbb;
+} 
+/* This part is for the right side of the hero page, wich contains the image */
+
+
+/*----------------------------------*/
+.hero > .body > .text {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hero > .body > .text > .intro {
+    padding-top: 23%;
+    text-align: right;
+
+    font-size: 45px;
+}
+
+.hero > .body > .text > .intro > .p1 {
+    margin-right: 20%;
+    margin-bottom: 2%;
+}
+
+.hero > .body > .text > .intro > .p2 {
+    margin-right: 10%;
+    margin-bottom: 1%;
+    margin-top: 0;
+}
+
+.hero > .body > .text > .intro > .p3 {
+    margin: 0;
+}
+
+.hero > .body > .text > .scroll {
+    padding-top: 29%;
+    padding-bottom: 10%;
+}
+
+.hero > .body > .text > .scroll > .down {
+    display: flex;
+    justify-content: center;
+
+    padding-left: 30%;
+    font-size: 20px;
+    
+    text-decoration: none;
+    color: var(--main-letter-color);
+}
+
+.hero > .body > .text > .scroll > .down:hover {
+    font-weight: bold;
+    color: var(--secondary-letter-color); 
+
+    margin: 0%;
+
+    transition: all 300ms ease;
+    transform: translateY(7px)
+}
+/* This part is for the left side of the hero page, wich contains the text */
+
+/* --------------------------- HERO PAGE ----------------------------- */
+
+
+/* --------------------------- ABOUT ME PAGE ----------------------------- */
+.about {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* --------------------------- ABOUT ME PAGE ----------------------------- */
