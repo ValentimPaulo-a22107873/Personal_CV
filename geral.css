@@ -1,0 +1,720 @@
+:root {
+    --dark-background-color : rgb(136, 139, 141);
+    --dark-main-letter-color : black;
+    --dark-secondary-letter-color : lime;
+    /* For the dark mode */
+
+    --background-color : rgb(11, 11, 12);
+    --main-letter-color : white;
+    --secondary-letter-color : rgb(121, 119, 119);
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--main-letter-color);
+
+    margin: 0%;
+
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.dark-mode {
+    background-color: var(--dark-background-color);
+    color: var(--dark-main-letter-color);
+} 
+
+/* ------------------------------- GLOBAL ------------------------------------- */
+
+
+
+/* ------------------------------- HEADER ------------------------------------- */
+header {
+    width: 100%;
+    height: 11vh;
+    /* For its ocupation in the page */
+
+    display: flex;
+    justify-content: space-between;
+
+    border: 2px;
+    border-style: hidden hidden solid hidden;
+    border-color: white;
+}
+
+header > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* For the positioning */
+
+    padding-left: 7%;
+}
+
+header > nav > a {
+    padding: 30px;
+    /* For the positioning */
+
+    text-decoration: none;
+    color: var(--secondary-letter-color);
+    font-size: 17px;
+}
+
+header > nav > a:hover {
+    text-shadow: 1px 1px 30px #ffffffcb;
+}
+
+header > .dark_mode_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* For the positioning */
+
+    padding-right: 6%;
+}
+
+header > .dark_mode_button > p:hover {
+    cursor: pointer;
+}
+
+/* ------------------------------- HEADER ------------------------------------- */
+
+
+
+/* ------------------------------- FOOTER ------------------------------------- */
+
+footer {
+    height: 5vh;
+    width: 100%;
+
+    border: 2px;
+    border-style: solid hidden hidden hidden;
+    border-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------------------------- FOOTER ------------------------------------- */
+
+
+
+/* --------------------------- HERO PAGE ----------------------------- */
+.hero {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero > .body {
+    width: 100%;
+    height: 89vh;
+    
+
+    display: flex;
+    justify-content: center;
+}
+
+/*----------------------------------*/
+.hero > .body > .image {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero > .body > .image > .picture {
+    width: 450px;
+    height: 450px;
+    margin-top: 13%;
+
+    background-color: white;
+    border-radius: 250px;
+}
+
+.hero > .body > .image > p {
+    margin-top: 2%;
+    font-size: 25px;
+    margin-bottom: 2%;
+}
+
+.hero > .body > .image > .social {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+} 
+
+.hero > .body > .image > .social > a {
+    padding-left: 7%;
+    padding-right: 7%;
+} 
+
+.hero > .body > .image > .social > a:hover {
+    text-shadow: 1px 1px 30px #ffffffbb;
+} 
+/* This part is for the right side of the hero page, wich contains the image */
+
+
+/*----------------------------------*/
+.hero > .body > .text {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hero > .body > .text > .intro {
+    padding-top: 23%;
+    text-align: right;
+
+    font-size: 45px;
+}
+
+.hero > .body > .text > .intro > .p1 {
+    margin-right: 20%;
+    margin-bottom: 2%;
+}
+
+.hero > .body > .text > .intro > .p2 {
+    margin-right: 10%;
+    margin-bottom: 1%;
+    margin-top: 0;
+}
+
+.hero > .body > .text > .intro > .p3 {
+    margin: 0;
+}
+
+.hero > .body > .text > .scroll {
+    padding-top: 29%;
+    padding-bottom: 10%;
+}
+
+.hero > .body > .text > .scroll > .down {
+    display: flex;
+    justify-content: center;
+
+    margin: 0%;
+    padding-left: 30%;
+    font-size: 20px;
+    
+    text-decoration: none;
+    color: var(--main-letter-color);
+}
+
+.hero > .body > .text > .scroll > .down:hover {
+    font-weight: bold;
+    color: var(--secondary-letter-color); 
+
+    margin: 0%;
+
+    transition: all 300ms ease;
+    transform: translateY(7px);
+}
+/* This part is for the left side of the hero page, wich contains the text */
+
+/* --------------------------- HERO PAGE ----------------------------- */
+
+
+
+/* --------------------------- ABOUT ME PAGE ----------------------------- */
+.about {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/*----------------------------------*/
+.about > .title {
+    width: 100%;
+    height: 11vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about > .title > h1 {
+    font-size: 50px;
+
+    height: 11vh;
+
+    display: flex;
+    align-items: center;
+}
+/* This part is for the title saying About me */
+
+
+.about > .body {
+    width: 100%;
+    height: 84vh;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.about > .body > .empty1 {
+    width: 15%;
+    height: 83vh;
+}
+
+.about > .body > .empty2{
+    width: 15%;
+    height: 83vh;
+}
+
+
+/*----------------------------------*/
+.about > .body > .info {
+    height: 84vh;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px;
+    border-style: solid hidden hidden hidden;
+    border-color: var(--secondary-letter-color);
+}
+
+.about > .body > .info > p {
+    font-size: 20px;
+    
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 1%;
+
+    display: flex;
+}
+
+.about > .body > .info > .board {
+    width: 800px;
+    height: 560px;
+
+    padding: 2%;
+
+    border: 2px;
+    border-color: var(--secondary-letter-color);
+    border-style: solid;
+    border-radius: 1%;
+    box-shadow: 1px 1px 10px var(--secondary-letter-color);
+}
+
+.about > .body > .info > .board > .text_welcome {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 17px;
+}
+
+.about > .body > .info > .board > .text_education {
+    padding: 2%;
+    display: none;
+    flex-direction: column;
+
+    font-size: 17px;
+}
+
+.about > .body > .info > .board > .text_education > h1 {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-letter-color);
+}
+
+.about > .body > .info > .board > .text_skills {
+    padding: 2%;
+    display: none;
+    flex-direction: column;
+
+    font-size: 17px;
+}
+
+.about > .body > .info > .board > .text_skills > h1 {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-letter-color);
+}
+
+.about > .body > .info > .board > .text_hobbies {
+    padding: 2%;
+    display: none;
+    flex-direction: column;
+
+    font-size: 17px;
+}
+
+.about > .body > .info > .board > .text_hobbies > h1 {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-letter-color);
+}
+
+
+/* This part is for the box and its content inside */
+
+/*----------------------------------*/
+.about > .body > .info > .board > .button_previous {
+    font-size: 40px;
+    color: var(--secondary-letter-color);
+    padding-right: 10px;
+    padding-bottom: 8px;
+
+    position: absolute;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 200%;
+
+    left: 494px;
+    top: 1485px;
+
+    background-color: var(--background-color);
+    border: 2px;
+    border-color: var(--secondary-letter-color);
+    border-style: solid;
+    box-shadow: 1px 1px 10px var(--secondary-letter-color);
+
+    display: none;
+}
+
+.about > .body > .info > .board > .button_previous:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 20px var(--secondary-letter-color);
+}
+
+.about > .body > .info > .board > .button_next {
+    font-size: 40px;
+    color: var(--secondary-letter-color);
+    padding-left: 10px;
+    padding-bottom: 8px;
+
+    position: absolute;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 200%;
+
+    left: 1349px;
+    top: 1485px;
+
+    background-color: var(--background-color);
+    border: 2px;
+    border-color: var(--secondary-letter-color);
+    border-style: solid;
+    box-shadow: 1px 1px 10px var(--secondary-letter-color);
+}
+
+.about > .body > .info > .board > .button_next:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 20px var(--secondary-letter-color);
+}
+/* This part is for the buttons and their properties */
+
+.about > .body > .empty2 {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+} 
+
+.about > .body > .empty2 > .scroll {
+    padding-top: 10%;
+    padding-right: 30%;
+    padding-bottom: 7%;
+} 
+
+.about > .body > .empty2 > .scroll > .up {
+    display: flex;
+    justify-content: center;
+
+    margin: 0%;
+    font-size: 20px;
+    
+    text-decoration: none;
+    color: var(--main-letter-color);
+} 
+
+.about > .body > .empty2 > .scroll > .up:hover {
+    font-weight: bold;
+    color: var(--secondary-letter-color); 
+
+
+
+    transition: all 300ms ease;
+    transform: translateY(-7px);
+}
+/* --------------------------- ABOUT ME PAGE ----------------------------- */
+
+
+
+/* --------------------------- PROJECTS PAGE ----------------------------- */
+.project > #text {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project > #img {
+    min-height: 700px;
+    background-color: white;
+
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.project > #text > h1 {
+    color: var(--secondary-letter-color);
+}
+
+.project > #text > p {
+    width: 70%;
+}
+
+.project > .deisi_jungle {
+    background-image: url(images/Deisi_Jungle.png);
+}
+
+.project > .deisi_sweeper {
+    background-image: url(images/Deisi_Sweeper.png);
+}
+
+.project > .constipes {
+    background-image: url(images/Não\ te\ constipes.png);
+}
+
+/* --------------------------- PROJECTS PAGE ----------------------------- */
+
+
+
+/* --------------------------- PLAYGROUND PAGE ----------------------------- */
+
+.playground > .body {
+    width: 100%;
+    height: 84vh;
+
+    display: flex;
+}
+
+.playground > .body > .calculator_space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 84vh;
+    width: 30%;
+}
+
+.playground > .body > .calculator_space > .calculator {
+    width: 300px;
+    height: 500px;
+
+    background-color: transparent;
+
+    border: 2px;
+    border-color: var(--main-letter-color);
+    border-style: solid;
+    box-shadow: 1px 1px 10px var(--secondary-letter-color);
+    border-radius: 16px;
+
+    padding: 5%;
+}
+
+/* --------- calculator zone ------------ */
+.screen {
+    width: 100%;
+    height: 15%;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    font-size: 50px;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.158);
+
+}
+
+.screen > p{
+    padding: 4%;
+    color: white;
+    opacity: 1;
+
+}
+
+.buttons {
+    padding-top: 2%;
+}
+
+.calc_button_row {
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc_button {
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    flex-basis: 20% ;
+    font-size: 30px;
+    height: 65px;
+
+    box-shadow: 1px 1px 10px var(--secondary-letter-color);
+}
+
+.calc_button:hover{
+    cursor: pointer;
+}
+
+.calc_button:active{
+    opacity: 0.1;
+}
+
+.double {
+    flex-basis: 47%;
+}
+
+/* --------- calculator zone ------------ */
+
+.playground > .body > .second_space {
+    height: 84vh;
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.playground > .body > .second_space > .date {
+    padding-top: 10%;
+    font-size: 20px;
+}
+
+.playground > .body > .second_space > .image_text {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.playground > .body > .second_space > .image_text > .text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.playground > .body > .second_space > .image_text > .text > p{
+    display: flex;
+    justify-content: center;
+}
+
+.playground > .body > .second_space > .image_text > .text > .input{
+    display: flex;
+    justify-content: space-around;
+}
+
+.playground > .body > .second_space > .image_text > .text > .input > input {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.playground > .body > .second_space > .image_text > .image {
+    padding-top: 5%;
+    padding-left: 8%;
+}
+
+.playground > .body > .second_space > .image_text > .image > img {
+    border-radius: 16px;
+}
+
+.playground > .body > .second_space > .image_text > .image > p {
+    position: absolute;
+    top: 700px;
+    left: 680px;
+
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.playground > .body > .third_space {
+    height: 84vh;
+    width: 40%;
+}
+
+.playground > .body > .third_space > .alert {
+    height: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.playground > .body > .third_space > .alert > .troll {
+    width: 200px;
+    height: 100px;
+
+    border: 2px;
+    border-color: var(--main-letter-color);
+    border-style: solid;
+    box-shadow: 1px 1px 10px var(--secondary-letter-color);
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+
+.playground > .body > .third_space > .animations {
+    
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(0% 0%, 20% 20%, 80% 20%, 100% 0%, 100% 60%, 60% 100%, 40% 100%, 0% 60%);
+
+    position: relative;
+    animation-name: fox;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+} 
+
+.playground > .body > .third_space > .animations:hover {
+
+    transform: rotate(20deg);
+} 
+
+@keyframes fox {
+    0%   { top:0px;}
+    50%  {  top:150px}
+    100% { top:0px;}
+}
+
+.playground > .body > .third_space > .name {
+    text-align: center;
+} 
+
+.playground > .body > .third_space > p {
+    padding: 5%;
+    text-align: center;
+} 
+
+
+
